@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" style="
+    height: 95%;
+">  <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="../assets/images/favicon-white.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Primary Meta Tags -->
+        <title>ThoriumMC</title>
+        <meta name="title" content="ThoriumMC">
+        <meta name="description" content="ThoriumMC News">
+        <link rel="stylesheet" href="../assets/styles/teamStyles.css">
+        <link rel="stylesheet" href="../assets/styles/forumStyles.css">
+    </head>
+
+    <body class="newsBody">
+        <br>
+        <div>
+            <button class="returnToForum" style="margin-left:2rem; margin-top:2rem;" onclick="window.location.href = '../forum.html'">Go Back</button>
+            <h1 id="name" style="position:absolute; top:5%; left:50%; transform:translateX(-50%); margin:0;">_</h1>
+        </div>
+        
+        <div id="news-container">
+            
+        </div>
+
+        <br><br><br><br>
+
+        <script src="../assets/scripts/animations.js"></script>
+        <script src="../assets/scripts/news.js"></script>
+
+        <script>
+            animateText("News", (text, finished) => {
+                document.getElementById("name").innerText = text;
+                setInterval(updateOnlinePlayers, 1000);
+            }, 175)
+        </script>
+    </body>
+
+</html>

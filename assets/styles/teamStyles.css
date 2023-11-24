@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background:url('../images/headImageBlurred.png') no-repeat center center fixed;
+	background-size:cover;
+	box-sizing: border-box;
+	color: white;
+}
+
+div.container {
+	width: 30%;
+    height: 30rem;
+	min-width: 350px;
+	/* background: linear-gradient(to right, red, purple); */
+	margin:0px auto;
+	margin-top: 100px;
+	border-radius: 10px;
+	overflow-x: hidden;
+	box-shadow: 1px 0 0 gray, -1px 0 0 gray, 0 1px 0 gray, 0 -1px 0 gray;
+	box-sizing: border-box;
+	backdrop-filter:blur(10px);
+	position: relative;
+    transition: 1s;
+}
+
+.top-container {
+	text-align: center;
+	padding: 35px;
+	font-size: 15px;
+	box-sizing: border-box;
+	margin-bottom: -50px;
+}
+
+.top-container>h1 {
+	margin-bottom: -10px;
+}
+
+.middle-container>div {
+	margin-bottom: -50px;
+}
+
+.middle-container-options {
+	text-align: center;
+  box-sizing: border-box;	
+}
+
+.middle-container-options>p {
+	display: inline-block;
+	box-sizing: border-box;	
+	overflow: hidden;
+	padding: 5px 27px;
+	border-bottom: 3px solid transparent;
+	border-radius: 5px;
+}
+
+.middle-container-options>p:hover  {
+  border-bottom: 3px solid black;
+  box-shadow: inset 0px 15px 10px rgba(255, 179, 179, 0.2);
+  transform: scale(105%);
+  overflow: hidden;
+  box-sizing: border-box;	
+}
+
+.bottom-container {
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 20px;	
+	width: 100%;
+}
+
+.bottom-container>h2 {
+	margin-bottom: -10px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-container button {
+	width: 50%;
+	line-height: 35px;
+	font-size: 20px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0), 0px 0px 5px rgba(255, 255,255, 0.7);
+}
+
+.button-container button:hover {
+  box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.my-photo {
+	width: 150px;
+	margin: 0px auto;
+}
+
+.my-photo img {
+	width: 100%;
+	border-radius: 25%;
+}
+
+.flex-container {
+    transition: content 1s ease-in-out;
+}

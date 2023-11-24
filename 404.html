@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang=""en style="
+    height: 95%;
+">  <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon-white.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Primary Meta Tags -->
+        <title>ThoriumMC</title>
+        <meta name="title" content="ThoriumMC">
+        <meta name="description" content="ThoriumMC Errorpage">
+        <link rel="stylesheet" href="assets/styles/teamStyles.css">
+        <link rel="stylesheet" href="assets/styles/style.css">
+    </head>
+
+    <body>
+        <main style="height: 100%;">
+            <div class="flex-container" id="member-container" 
+                style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: -10rem;">
+                <div class="container">
+                    <div class="top-container">
+                        <h1 id="header">_</h1>
+                        <br><br><br>
+                        <p>
+                            We couldn't find the page you were looking for.
+                        </p>
+                        <nav class="footer">
+                            <button id="returnButton">
+                                Go Back
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="footer">
+                <a href="index.html" title="">ThoriumMC</a>
+                <a href="ourTeam.html" title="">Our Team</a>
+                <a href="forum.html" title="">Forum</a>
+                <a href="404.html" title="">Social Media</a>
+                <a href="https://discord.gg/7WX49fZtkb" title="" target="_blank">Discord</a>
+            </nav>
+        </main>
+        
+        <script src="assets/scripts/animations.js"></script>
+        <script>
+            animateText("Whoops!", (text, finished) => {
+                document.getElementById("header").innerText = text;
+            }, 175)
+
+            document.getElementById('returnButton').addEventListener('click', function() {
+                window.history.back();
+            });
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" style="
+    height: 95%;
+">  <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon-white.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Primary Meta Tags -->
+        <title>ThoriumMC</title>
+        <meta name="title" content="ThoriumMC">
+        <meta name="description" content="ThoriumMC Team">
+        <link rel="stylesheet" href="assets/styles/teamStyles.css">
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body class="team">
+        <main style="height: 100%;">
+            <div>
+                <div>
+                    <h1 id="name" style="position:fixed; top:5%; left:50%; transform:translateX(-50%); margin:0;">_</h1>
+                </div>
+
+                <div class="flex-container" id="member-container" 
+                    style="display: flex; flex-wrap: wrap; gap: 20px;">
+                
+                </div>
+            </div>
+
+            <nav class="footer">
+                <a href="index.html" title="">ThoriumMC</a>
+                <a href="ourTeam.html" title="">Our Team</a>
+                <a href="forum.html" title="">Forum</a>
+                <a href="404.html" title="">Social Media</a>
+                <a href="https://discord.gg/7WX49fZtkb" title="" target="_blank">Discord</a>
+            </nav>
+        </main>
+
+        <script src="assets/scripts/animations.js"></script>
+        <script src="assets/scripts/player.js"></script>
+        <script src="assets/scripts/team.js"></script>
+
+        <script>
+            updateOnlinePlayers();
+            animateText("Our Team", (text, finished) => {
+                document.getElementById("name").innerText = text;
+                setInterval(updateOnlinePlayers, 1000);
+            }, 175)
+        </script>
+    </body>
+</html>
